@@ -185,14 +185,14 @@ local tasklist_buttons = gears.table.join(
 -- vicious widgets
 
 datewidget = wibox.widget.textbox()
-vicious.register(datewidget, vicious.widgets.date, "  %r ")
+vicious.register(datewidget, vicious.widgets.date, " <span color='#FF79C6'> %r</span> ")
 --vicious.register(datewidget, vicious.widgets.date, "  %I:%M %p ")
 
 cpuwidget = wibox.widget.textbox()
-vicious.register(cpuwidget, vicious.widgets.cpu, " :  $1% ")
+vicious.register(cpuwidget, vicious.widgets.cpu, " : <span color='#FF5555'> $1%</span> ")
 
 batwidget = wibox.widget.textbox()
-vicious.register(batwidget, vicious.widgets.bat, "  $2% ", 100, "BAT0")
+vicious.register(batwidget, vicious.widgets.bat, " <span color='#50FA7B'> $2%</span> ", 100, "BAT0")
 
 awful.screen.connect_for_each_screen(function(s)
     -- Wallpaper
