@@ -23,7 +23,7 @@ alias gcm='git commit -m'
 # yt-dlp aliases
 
 alias yt='yt-dlp -4'
-alias yt-formats='yt -F'
+alias ytf='yt -F'
 
 # make aliases
 
